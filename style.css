@@ -1,0 +1,26 @@
+/* From google fonts (Poppins) import the style*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* single colon (:) for pseudo-elements */
+:root(){  /* since we want all the variables to be as global variables ; therefore we will put it all under :root() */
+    --color-dark: hsl(252, 30%, 17%);  /* to declare a variable give two hifins along with variable name ( --variable-name ) */
+    /* hsl() means heu, saturation , lightness */
+
+
+}
+
+/* double colons (::) for pseudo-classes */
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;  /* Paste the font family as well */
+
+}
