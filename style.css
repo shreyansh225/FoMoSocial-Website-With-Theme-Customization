@@ -22,5 +22,5 @@
 
 body{
     font-family: 'Poppins', sans-serif;  /* Paste the font family as well */
-
+    color: var(--color-dark);   /* to assign the variable --color-dark to color property */
 }
