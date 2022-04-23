@@ -15,13 +15,14 @@
     --color-dark: hsl(252, 30%, 17%); 
     --color-black: hsl(252, 3%, 10%);
 
+    --border-radius: 2rem;
+    --card-border-radius: irem; 
+    --btn-padding: 0.6rem 2rem;
+    ---search-padding: 0.6rem irem; 
+    --card-padding: irem;
+
 }
 /*
---border-radius: 2rem;
---card-border-radius: irem; 
---btn-padding: 0.6rem 2rem;
----search-padding: 0.6rem irem; 
---card-padding: irem;
 --sticky-top-left: 5.4rem; 
 --sticky-top-right: -18rem;
 */
@@ -46,5 +47,29 @@ body{
     font-family: "Poppins", sans-serif;  /* Paste the font family as well if you have added the fonts from fonts.googleapis.com*/
     color: var(--color-dark);   /* to assign the variable --color-dark to color property */
     background: var(--color-light);
-    overflow-x: hidden;
+    overflow-x: hidden;   /* overflow-x specifies what to do with the left/right edges of the content. & hidden means that the overflow is clipped, and the rest of the content is hidden */
+}
+
+/* GENERAL STYLES */
+.container{
+    width: 80%;
+    margin: 0 auto; /* top and bottom margins are 0
+    * right and left margins are auto ; tells the browser to automatically determine the left and right margins itself, which it does by setting them equally */
+}
+
+.profile-photo{  
+    width: 2.7rem;
+    aspect-ratio: 1/1;  /* so the height and width is the same */
+    border-radius: 50%;
+    overflow: hidden; /* hidden means that the overflow is clipped, and the rest of the content is hidden */
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+.btn{
+    display: inline-block;
+    padding: var();
 }
