@@ -2,15 +2,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
 /* single colon (:) for pseudo-elements */
-:root(){  /* since we want all the variables to be as global variables ; therefore we will put it all under :root() */
-    --color-dark: hsl(252, 30%, 17%);  /* to declare a variable give two hifins along with variable name ( --variable-name ) */
+:root{  /* since we want all the variables to be as global variables ; therefore we will put it all under :root { } */ 
+    /* Variable names */
+    --color-white: hsl(252, 30%, 100%); /* to declare a variable give two hifins along with variable name ( --variable-name ) */
     /* hsl() means heu, saturation , lightness */
-
+    --color-light: hsl(252, 30%, 95%);
+    --color-gray: hsl(252, 15%, 65%); 
+    --color-primary: hsl(252, 75%, 60%);
+    --color-secondary: hsl(252, 100%, 90%); 
+    --color-success: hsl(120, 95%, 65%);
+    --color-danger: hsl(0, 95%, 65%);
+    --color-dark: hsl(252, 30%, 17%); 
+    --color-black: hsl(252, 3%, 10%);
 
 }
+/*
+--border-radius: 2rem;
+--card-border-radius: irem; 
+--btn-padding: 0.6rem 2rem;
+---search-padding: 0.6rem irem; 
+--card-padding: irem;
+--sticky-top-left: 5.4rem; 
+--sticky-top-right: -18rem;
+*/
+
+
+
 
 /* double colons (::) for pseudo-classes */
-*, *::before, *::after{
+*, 
+*::before, 
+*::after{
     margin: 0;
     padding: 0;
     outline: 0;
@@ -21,6 +43,8 @@
 }
 
 body{
-    font-family: 'Poppins', sans-serif;  /* Paste the font family as well */
+    font-family: "Poppins", sans-serif;  /* Paste the font family as well if you have added the fonts from fonts.googleapis.com*/
     color: var(--color-dark);   /* to assign the variable --color-dark to color property */
+    background: var(--color-light);
+    overflow-x: hidden;
 }
