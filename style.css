@@ -56,7 +56,7 @@ body{
 
 .profile-photo{  
     width: 2.7rem;
-    aspect-ratio: 1/1;  /* so the height and width is the same */
+    aspect-ratio: 1/1;  /* so the height and width of the img is same */
     border-radius: 50%;
     overflow: hidden; /* hidden means that the overflow is clipped, and the rest of the content is hidden */
 }
@@ -84,3 +84,29 @@ img {
     background: var(--color-primary);
     color:white;
 }
+
+.text-bold{
+    font-weight: 500;
+}
+
+.text-muted{
+    color: var(--color-gray);
+}
+
+/*================================ NAVBAR ====================*/
+
+nav{
+    width: 100%;     /* will cover entire screen size (responsive) */
+    background:  var(--color-white);
+    padding: 0.7rem0;
+    position: fixed;
+    top: 0;
+    z-index: 10;   /* precidence in display over z-index 9 */
+}
+
+nav .container{
+    display: flex;  /* whatever is inside the container will come inside a flex box*/
+    align-items: center;        /* items will be in the center vertically and horizontally */
+    justify-content: space-between;  /* justified space between tags; according to the screen size */
+}
+
